@@ -1,0 +1,11 @@
+@mixin lado($conteudo, $lado) {
+    content: $conteudo;
+    color: #00bd7e;
+    position: absolute;
+    @if $lado == "esquerdo" {
+      left: -1pc;
+    }
+    @else {
+      right: -1pc;
+    }
+}
