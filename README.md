@@ -20,7 +20,7 @@
             <td width="20%" > 
                 <details align="top" width="100%">
                     <summary align="center">
-                        <img width="50%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="">
+                        <div><img width="50%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt=""></div>
                         <h3>sass</h3>
                     </summary>
                     preprocessador do css, foi utilizado para os mesmos fins de um css normal, mas com funcionalidades extras durante o periodo de desenvolvimento
