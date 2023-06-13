@@ -1,6 +1,10 @@
 <template>
   <div>
     <h1>Inteligencia emocional</h1>
+
+    <div>
+      
+    </div>
   </div>
 </template>
 
