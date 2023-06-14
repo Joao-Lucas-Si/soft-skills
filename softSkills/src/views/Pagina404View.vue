@@ -1,12 +1,24 @@
 <template>
-  <div class="pagina4040">
+  <div class="pagina404">
     <h1>erro 404</h1>
-    <h2>essa página não existe, clique no link abaixo para retornar a página home</h2>
-    <router-link :to="{ name: 'home' }">Home</router-link>
+    <h2>essa página não existe, clique em qualquer um dos links no menu ao lado para ir a uma página valida</h2>
   </div>
 </template>
 
 <style lang="scss" scoped>
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.pagina404 {
+  width: 100%;
+  height: 100vh;
+}
+
+
 h1 {
   text-align: center;
   font-size: 5rem;

@@ -18,9 +18,17 @@ const router = createRouter({
       component: SoftSkillsView
     },
     {
+      path: '/soft-skills/:catchAll(.*)',
+      redirect: "/soft-skills/",
+    },
+    {
       path: '/inteligencia-emocional/',
       name: 'inteligenciaEmocional',
       component: InteligenciaEmocionalView
+    },
+    {
+      path: '/inteligencia-emocional/:catchAll(.*)',
+      redirect: "/inteligencia-emocional/",
     },
     {
       path: '/:catchAll(.*)',
