@@ -5,6 +5,12 @@
             .container {
                 display: flex;
             }
+
+            @media (prefers-color-scheme: dark) {
+                * {
+                    color: #fff;
+                }
+            }
             </style>
             <div class="container">
                 <div class="tecnologia">
@@ -24,7 +30,6 @@
                     <h2>HTML</h2>
                 </div>
             </div>
-            <h1>HELLO WORLD!</h1>
         </div>
     </foreignObject>
 </svg>
