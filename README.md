@@ -3,7 +3,7 @@
     projeto informativo sobre soft skills,
     esse projeto foi desenvolvido para a matéria de dsa2 do curso técnico de informática da fieb para que os alunos recuperarão sua nota de atitudinal perdida
 </p>
-
+<img width="100%" src="tecnologias.svg" alt="">
 <div>
     <h2>Tecnologias utilizadas</h2>
     <table width="100%">
@@ -65,6 +65,7 @@ yarn dev
     </details>
     <details>
         <summary>pelo github pages</summary>
+        apenas basta acessar esse link
     </details>
 </div>
 
