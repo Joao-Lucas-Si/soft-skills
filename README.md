@@ -8,7 +8,9 @@
 </div>
 <div>
     <h2>Tecnologias utilizadas</h2>
+    <a href="">
     <img src="tecnologias.svg" width="100%" >
+</a>
 </div>
 
 <div>
