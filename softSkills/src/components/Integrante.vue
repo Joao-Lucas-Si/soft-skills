@@ -1,6 +1,6 @@
 <template>
 <div class="integrante">
-    <img :src="`/public/${foto}`" alt="">
+    <img :src="`/${foto}`" alt="">
     <h3>Nome: <span class="green">{{ nome }}</span></h3>
     <h4>Idade: <span class="green">{{ idade }}</span></h4>
     <h3 class="green">soft skills</h3>

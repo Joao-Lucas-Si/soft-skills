@@ -227,7 +227,7 @@ export default {
       
       <form @submit.prevent="submit()" action="mailto:" method="post" novalidate>
         <h2 class="titulo">entre em contato</h2>
-        <img src="/public/contato.svg" alt="">
+        <img src="/contato.svg" alt="">
         <div class="barra">
           <div class="progresso"></div>
         </div>
@@ -255,7 +255,7 @@ export default {
       </form>
 
       <footer>
-        <img src="/public/Fieb.png" alt="" />
+        <img src="/Fieb.png" alt="" />
         <h3>inf2bm</h3>
         <div class="participantes">
           <div>

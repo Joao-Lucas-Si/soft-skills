@@ -1,8 +1,10 @@
 <template>
 <div class="pilar">
+    <span class="parte"></span><span class="parte"></span><span class="parte"></span><span class="parte"></span><span class="parte"></span>
+    <span class="triangulo"></span>
     <img @click="clicado = !clicado" :src="imagem" alt="">
     <h4>{{ titulo }}</h4>
-    <span></span>
+    <span class="topo"></span>
     <Modal-info @fechar-modal="clicado = !clicado" :textos="textos" :titulo="titulo"  v-if="clicado" />
 </div>
 </template>
@@ -36,6 +38,12 @@ export default {
     }
 }
 
+@keyframes aumentando {
+    to {
+        transform: scale(2);
+    }
+}
+
 
 .pilar {
     height: 65vh;
@@ -44,37 +52,65 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
     margin-top: 15%;
+
+    .triangulo {
+        position: absolute;
+        top: 10%;
+        background-color: #ccc;
+        width: 100%;
+        height: 5%;
+        border-end-start-radius: 20px;
+        border-end-end-radius: 20px;
+    }
+
+    .parte {
+        display: block;
+        height: 100%;
+        width: 20%;
+        background-color: #fff;
+    }
+    .parte:nth-of-type(even) {
+        background-color: #ccc;
+    }
 
     > h4 {
         position: absolute;
         top: -7%;
     }
 
+    /* &::after {
+        content: " ";
+        position: absolute;
+        top: -50%;
+        transform: translateY(100%);
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        animation: aumentando 1s infinite linear;
+        border: solid 5px $cor-destaque;
+    }
+    */
+
     > img {
         position: absolute;
         top: -50%;
+        z-index: 2;
         width: 110%;
         height: 35%;
         animation: 2s flutuando infinite alternate linear;
         cursor: pointer;
 
-        &::after {
-            width: 200%;
-            height: 100%;
-            background-color: #f00;
-            top: 50%;
-            transform: translateY(-50%);
-        }
+       
     }
 
-    span {
+    .topo {
         position: absolute;
         top: 0%;
         width: 120%;
         height: 10%;
         background-color: #fff;
+        border-radius: 10px;
     }
 }
 </style>

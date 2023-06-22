@@ -1,5 +1,5 @@
 <template>
-<div class="noticia">
+<div :class="`noticia ${(posicao == noticiaAtual) ? ' atual': '' }`">
     <a class="fundo" :href="url">
         <img :src="img" alt="">
     </a>
@@ -40,6 +40,15 @@ export default {
     width: 100%;
     height: 70vh;
     position: relative;
+    overflow: hidden;
+    width: 0;
+    left: 200%;
+    display: flex;
+
+    &.atual {
+        width:100%;
+        left: 0%;
+    }
 
     > .fundo {
         width: 100%;
