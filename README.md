@@ -3,18 +3,9 @@
     projeto informativo sobre soft skills,
     esse projeto foi desenvolvido para a matéria de dsa2 do curso técnico de informática da fieb para que os alunos recuperarão sua nota de atitudinal perdida
 </p>
-<div align="center">
-    
-</div>
-<div>
-    <h2>Tecnologias utilizadas</h2>
-    <a href="">
-    <img src="tecnologias.svg" width="100%" >
-</a>
-</div>
 
 <div>
-    <h2 align="center">como rodar o projeto?</h2>
+    <h2 align="center">como rodar e utilizar o projeto?</h2>
     <details align="left">
         <summary >por terminal</summary>
         para rodar o projeto manualmente por terminal, primeiramente é necessário baixar todas as dependências das tegnologias utilizadas,
@@ -35,11 +26,7 @@ yarn dev
         após isso, abre seu navegador e digite na barra de busca superior, "localhost:5173"
     </details>
     <details>
-        <summary>por docker</summary>
-    </details>
-    <details>
         <summary>pelo github pages</summary>
         apenas basta acessar esse link
     </details>
 </div>
-

@@ -12,8 +12,18 @@
 .titulo {
   color: rgba(0, 189, 126, 1);
   text-align: center;
-  font-size: 2rem;
   text-transform: capitalize;
+}
+
+h1.titulo {
+  font-size: 2em;
+}
+h2.titulo {
+    font-size: 1.75em;
+}
+h3.titulo {
+  font-size: 1.5em;
+  
 }
 
 a {

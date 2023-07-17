@@ -1,5 +1,5 @@
 <template>
-<div :class="`noticia ${(posicao == noticiaAtual) ? ' atual': '' }`">
+<div :class="`noticia ${ direcao } ${(posicao == noticiaAtual) ? ' atual': '' }`">
     <a class="fundo" :href="url">
         <img :src="img" alt="">
     </a>
@@ -24,14 +24,9 @@ export default {
         noticiaAtual: Number,
         titulo: String,
         cor: String,
+        direcao: String
     }, 
-    computed: {
-        cssVars() {
-            return {
-                '--noticia-cor': this.cor
-            }
-        }
-    }
+    
 }
 </script>
 
@@ -44,8 +39,9 @@ export default {
     width: 0;
     left: 200%;
     display: flex;
+    transition: left 1s ;
 
-    &.atual {
+    &.atual { 
         width:100%;
         left: 0%;
     }
@@ -67,9 +63,10 @@ export default {
         bottom: 0%;
         height: 30%;
         width: 70%;
-        
+        border-start-end-radius: 700px;
         align-items: center;
         background-color: v-bind(cor);
+        padding-right: 5%;
 
         a {
             height: 100%;

@@ -9,8 +9,9 @@ import IconSass from './components/icons/IconSass.vue'
 import IconNest from './components/icons/IconNest.vue'
 import IconHtml from './components/icons/IconHtml.vue'
 
+import Participante from './components/Participante.vue'
 export default {
-  components: { IconHome, IconSoftSkills, IconInteligenciaEmocional, IconLogo, IconVue, IconSass, IconNest, IconHtml },
+  components: { IconHome, IconSoftSkills, IconInteligenciaEmocional, IconLogo, IconVue, IconSass, IconNest, IconHtml, Participante },
   data() {
     return {
       progresso: '0%',
@@ -26,14 +27,7 @@ export default {
       mensagemErro: ""
     }
   },
-  methods: {
-    pegarProgresso() {
-      let porcento =
-        (document.documentElement.scrollTop /
-          (document.documentElement.scrollHeight - document.documentElement.clientHeight)) *
-        100
-      this.progresso = porcento + '%'
-    }, 
+  methods: { 
     validarNome(): boolean {
       const inicio = `senhor(a), por favor, `
       let mensagem
@@ -194,9 +188,6 @@ export default {
       }
     }
   },
-  created() {
-    window.addEventListener('scroll', this.pegarProgresso)
-  }
 }
 </script>
 
@@ -214,13 +205,10 @@ export default {
       </router-link>
       <router-link to="/inteligencia-emocional/">
         <icon-inteligencia-emocional />
-        <h4>inteligencia emocional</h4>
+        <h4>inteligência emocional</h4>
       </router-link>
     </nav>
     <div>
-      <div class="barra">
-        <div class="progresso" :style="`width: ${progresso}`"></div>
-      </div>
       <div id="topo"></div>
       <RouterView />
 
@@ -258,26 +246,63 @@ export default {
         <img src="/Fieb.png" alt="" />
         <h3>inf2bm</h3>
         <div class="participantes">
-          <div>
-            <h3>João</h3>
-          </div>
-          <div>
-            <h3>Jhordan</h3>
-          </div>
-          <div>
-            <h3>Danilo</h3>
-          </div>
+          <participante :informacoes="[
+            {
+              chave: 'Numero de chamada',
+              valor: '20'
+            },
+            {
+              chave: 'RM',
+              valor: '86287'
+            },
+            {
+              chave: 'Responsabilidades',
+              valor: 'programação(JavaScript com vue), estrutura(conteúdo html) e estilização(css pré processado por sass)'
+            },
+          ]" nome="João Lucas Silva Lopes" />
+          <participante :informacoes="[
+            {
+              chave: 'Numero de chamada',
+              valor: '19'
+            },
+            {
+              chave: 'RM',
+              valor: '86287'
+            },
+            {
+              chave: 'Responsabilidades',
+              valor: 'estilização(css pré processado por sass)'
+            },
+          ]" nome="Jhordan Samuel Jesus dos Santos" />
+          <participante :informacoes="[
+            {
+              chave: 'Numero de chamada',
+              valor: '05'
+            },
+            {
+              chave: 'RM',
+              valor: '86287'
+            },
+            {
+              chave: 'Responsabilidades',
+              valor: 'pesquisa'
+            },
+          ]" nome="Danilo Medeiros de Oliveira" />
         </div>
 
         <div class="tecnologias">
-          <icon-vue />
-          <h3>Vue.js</h3>
-          <icon-nest />
-          <h3>Nest.js</h3>
-          <icon-sass />
-          <h3>SASS</h3>
-          <icon-html />
-          <h3>HTML</h3>
+          <div class="tecnologia">
+            <icon-vue />
+            <h3>Vue.js</h3>
+          </div>
+          <div class="tecnologia">
+            <icon-sass />
+            <h3>SASS</h3>
+          </div>
+          <div class="tecnologia">
+            <icon-html />
+            <h3>HTML</h3>
+          </div>
         </div>
       </footer>
     </div>
@@ -303,21 +328,7 @@ export default {
     height: 10vw;
   } 
 }
-.barra {
-  z-index: 5;
-  width: 100%;
-  height: 0.7rem;
-  position: sticky;
-  top: 0%;
-  background-color: transparent;
 
-  .progresso {
-    background-color: rgba(0, 189, 126, 1);
-    height: 100%;
-    transition: all 100ms ease-in-out;
-    width: 0%;
-  }
-}
 nav {
   background-color: var(--color-background-soft);
   width: 5vw;
@@ -348,7 +359,7 @@ nav {
     align-items: center;
     width: 100%;
     margin-top: 10px;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-text);
     text-align: center;
 
     svg {

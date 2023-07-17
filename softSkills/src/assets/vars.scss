@@ -1,5 +1,15 @@
 :root {
     --cor-destaque: #00bd7e;
+    --cor-destaque2: #037a52;
+    --color-background: #181818;
+    --color-background-soft: #222222;
+    --color-background-mute: #282828;
+    
+    --color-text:  #ebebeba3;
 }
 
+$cor-texto: var(--color-text);
+$bg-cor1: var(--color-background);
+$bg-cor2: var(--color-background-soft);
+$bg-cor3: var(--color-background-mute);
 $cor-destaque: var(--cor-destaque)

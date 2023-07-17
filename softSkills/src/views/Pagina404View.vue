@@ -5,6 +5,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  beforeMount() {
+     document.title = "página não encontrada"
+  },
+}
+</script>
+
 <style lang="scss" scoped>
 body {
   width: 100vw;
