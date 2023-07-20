@@ -1,7 +1,7 @@
 <template>
 <div class="player">
     <div class="video">
-        <player :video="videos[videoAtual - 1]"/>
+        <player-video :video="videos[videoAtual - 1]"/>
     </div>
     <div class="videos">
         <h3 class="titulo">opções</h3>
@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import Player from './Player.vue';
+import PlayerVideo from './PlayerVideo.vue';
 interface videos {
     indice: number,
     video: string,
@@ -35,7 +35,7 @@ export default {
             this.videoAtual = video;
         },
     },
-    components: { Player }
+    components: { PlayerVideo }
 }
 </script>
 

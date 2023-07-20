@@ -1,8 +1,9 @@
 <template>
   <div class="SoftSkills">
     <h1 class="titulo">soft Skills</h1>
-
+    <player-audio capa="/soft-skills/audio_capa.webp" audio="/soft-skills/audio.mp3" titulo="O que são 'soft skills', habilidades comportamentais cada vez mais buscadas por empregadores" />
     <article>
+
 
       <h2 class="titulo">O que é Soft Skills</h2>
 
@@ -183,11 +184,12 @@ import MultiPlayer from '@/components/MultiPlayer.vue';
 import Quiz from '@/components/Quiz.vue';
 import ImagemTexto from '@/components/ImagemTexto.vue';
 import DetailsSummary from '@/components/DetailsSummary.vue';
+import PlayerAudio from '@/components/PlayerAudio.vue';
 export default {
     beforeMount() {
      document.title = "soft skills"
   },
-    components: { Quiz, MultiPlayer, ImagemTexto, DetailsSummary }
+    components: { Quiz, MultiPlayer, ImagemTexto, DetailsSummary, PlayerAudio }
 }
 </script>
 

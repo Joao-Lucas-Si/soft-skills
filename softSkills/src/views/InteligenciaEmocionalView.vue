@@ -145,6 +145,8 @@
             </div>
           </template>
         </card-info>
+
+        <player-audio capa="/inteligencia-emocional/audio_capa.webp" audio="/inteligencia-emocional/audio.mp3" titulo="INTELIGÊNCIA EMOCIONAL - Daniel Goleman - Resumo Completo do Livro | Audiolivro" />
       </article>
 
       <article>
@@ -300,6 +302,7 @@ import CardInfo from '@/components/CardInfo.vue';
 import ImagemTexto from '@/components/ImagemTexto.vue';
 import Paragrafos from '@/components/Paragrafos.vue';
 import DetailsSummary from '@/components/DetailsSummary.vue';
+import PlayerAudio from '@/components/PlayerAudio.vue';
 
 export default {
   beforeMount() {
@@ -335,7 +338,7 @@ export default {
 
     }
   },
-  components: { Pilar, MultiPlayer, CardInfo, ImagemTexto, Paragrafos, DetailsSummary }
+  components: { Pilar, MultiPlayer, CardInfo, ImagemTexto, Paragrafos, DetailsSummary, PlayerAudio }
 }
 </script>
 
