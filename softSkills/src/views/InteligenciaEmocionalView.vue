@@ -7,6 +7,7 @@
       <h2 class="titulo">pilares</h2>
 
       <div class="pilares">
+
         <pilar 
           titulo="autoconsciência" 
           imagem="/autoconsciencia.svg" 
@@ -158,32 +159,8 @@
         /n
         A seguir citamos alguns benefícios do trabalho com a inteligência emocional na escola com os alunos:" />
 
-        <div class="losa">
-          <h3 v-if="beneficiosApresentados.length == 0">clique em qualquer uma das cadeiras a seguir para listar um benefício nesta losa </h3>
-          <div v-else>
-            <p v-for="beneficio in beneficiosApresentados">{{ beneficio }}</p>
-          </div>
-        </div>
-        <div class="cadeiras">
-          <div class="cadeira" @click="apresentarBeneficio(1)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(2)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(3)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(4)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(5)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(6)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(7)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(8)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(9)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(10)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(11)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(12)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(13)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(14)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(15)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(16)"></div>
-          <div class="cadeira" @click="apresentarBeneficio(17)"></div>
-        </div>
         
+        <BeneficiosEscola />
       </article>
 
       <article>
@@ -303,42 +280,18 @@ import ImagemTexto from '@/components/ImagemTexto.vue';
 import Paragrafos from '@/components/Paragrafos.vue';
 import DetailsSummary from '@/components/DetailsSummary.vue';
 import PlayerAudio from '@/components/PlayerAudio.vue';
+import BeneficiosEscola from '@/components/BeneficiosEscola.vue';
 
 export default {
   beforeMount() {
      document.title = "inteligência emocional"
-  },
-  data() {
-    return {
-      beneficiosApresentados: [],
-      beneficios: [
-        "amplia a atenção e a concentração;",
-        "auxilia na superação de desafios;",
-        "fornece maior capacidade de controlar impulsos;",
-        "inspira e motiva pessoas;",
-        "desenvolve a empatia;",
-        "diminui índices de violência;",
-        "encoraja o convívio com as diferenças;",
-        "estabelece vínculos afetivos baseados no respeito e na compreensão;",
-        "estimula escolhas responsáveis e saudáveis;",
-        "facilita a comunicação e a expressão;",
-        "utiliza as emoções em seu favor;",
-        "identifica as emoções dos outros;",
-        "melhora o desempenho acadêmico;",
-        "desenvolve de outras habilidades cognitivas;",
-        "previne o bullying;",
-        "promove o trabalho em equipe;",
-        "reduz a ansiedade e a depressão;",
-        "amplia o autoconhecimento."
-      ]
-    }
   },
   methods: {
     apresentarBeneficio(indice: number) {
 
     }
   },
-  components: { Pilar, MultiPlayer, CardInfo, ImagemTexto, Paragrafos, DetailsSummary, PlayerAudio }
+  components: { Pilar, MultiPlayer, CardInfo, ImagemTexto, Paragrafos, DetailsSummary, PlayerAudio, BeneficiosEscola }
 }
 </script>
 
