@@ -110,71 +110,76 @@
       <p>A tecnologia desempenha um papel fundamental em ajudar a atender à demanda por soft skills nas empresas. Aqui estão algumas maneiras pelas quais a tecnologia pode ser utilizada nesse contexto:</p>
     </div>
 
-    <imagem-texto :nivel="3" texto-original="A tecnologia permite o acesso a uma ampla variedade de recursos de aprendizagem online, como cursos, tutoriais em vídeo e conteúdos interativos. Essas plataformas podem oferecer treinamentos específicos para desenvolver habilidades sociais e emocionais, permitindo que os funcionários aprendam no seu próprio ritmo e de acordo com suas necessidades individuais." titulo="E-learning e plataformas de treinamento: " imagem="/soft-skills/e-learning.jpeg" />
+    <imagem-texto 
+      :nivel="3" 
+      texto="A tecnologia permite o acesso a uma ampla variedade de recursos de aprendizagem online, como cursos, tutoriais em vídeo e conteúdos interativos. Essas plataformas podem oferecer treinamentos específicos para desenvolver habilidades sociais e emocionais, permitindo que os funcionários aprendam no seu próprio ritmo e de acordo com suas necessidades individuais." 
+      titulo="E-learning e plataformas de treinamento: " 
+      imagem="/soft-skills/e-learning.jpeg" 
+    />
 
+    <imagem-texto :nivel="3" :reverso="true" texto="A tecnologia de realidade virtual pode fornecer experiências simuladas que permitem aos profissionais praticar habilidades sociais em um ambiente seguro e controlado. Por exemplo, os funcionários podem participar de simulações de negociação, apresentações ou resolução de conflitos, onde recebem feedback imediato e podem aprimorar suas habilidades de forma interativa." titulo="Realidade virtual e simulações:" imagem="/soft-skills/realidade-virtual.jpeg" />     
 
-    <imagem-texto :nivel="3" :reverso="true" texto-original="A tecnologia de realidade virtual pode fornecer experiências simuladas que permitem aos profissionais praticar habilidades sociais em um ambiente seguro e controlado. Por exemplo, os funcionários podem participar de simulações de negociação, apresentações ou resolução de conflitos, onde recebem feedback imediato e podem aprimorar suas habilidades de forma interativa." titulo="Realidade virtual e simulações:" imagem="/soft-skills/realidade-virtual.jpeg" />     
+    <imagem-texto :nivel="3" texto="Com a crescente popularidade do trabalho remoto, as empresas têm adotado plataformas de colaboração online, como Slack, Microsoft Teams e Google Workspace. Essas ferramentas permitem que os profissionais se comuniquem e colaborem de forma eficiente, independentemente da localização física. Elas facilitam a prática de habilidades de comunicação, trabalho em equipe e negociação, ao mesmo tempo em que promovem a interação social entre os membros da equipe." titulo="Plataformas de colaboração online: " imagem="/soft-skills/colaboracao.jpg" />
 
-    <imagem-texto :nivel="3" texto-original="Com a crescente popularidade do trabalho remoto, as empresas têm adotado plataformas de colaboração online, como Slack, Microsoft Teams e Google Workspace. Essas ferramentas permitem que os profissionais se comuniquem e colaborem de forma eficiente, independentemente da localização física. Elas facilitam a prática de habilidades de comunicação, trabalho em equipe e negociação, ao mesmo tempo em que promovem a interação social entre os membros da equipe." titulo="Plataformas de colaboração online: " imagem="/soft-skills/colaboracao.jpg" />
-
-    <imagem-texto :nivel="3" :reverso="true" texto-original="A gamificação envolve a aplicação de elementos de jogos, como pontos, competição e recompensas, em contextos não relacionados a jogos. Essa abordagem pode ser utilizada para incentivar e desenvolver soft skills. Por exemplo, os funcionários podem participar de jogos ou desafios interativos que promovam o trabalho em equipe, a resolução de problemas ou a comunicação eficaz. Essas experiências lúdicas podem ser envolventes e motivadoras, estimulando o desenvolvimento de habilidades sociais." titulo="Gamificação:" imagem="/soft-skills/gamificacao.jpg" />
+    <imagem-texto :nivel="3" :reverso="true" texto="A gamificação envolve a aplicação de elementos de jogos, como pontos, competição e recompensas, em contextos não relacionados a jogos. Essa abordagem pode ser utilizada para incentivar e desenvolver soft skills. Por exemplo, os funcionários podem participar de jogos ou desafios interativos que promovam o trabalho em equipe, a resolução de problemas ou a comunicação eficaz. Essas experiências lúdicas podem ser envolventes e motivadoras, estimulando o desenvolvimento de habilidades sociais." titulo="Gamificação:" imagem="/soft-skills/gamificacao.jpg" />
   
-       
-  
-    <imagem-texto :nivel="3" texto-original="A tecnologia também pode ajudar a avaliar e fornecer feedback sobre habilidades sociais. Por exemplo, as empresas podem utilizar ferramentas de análise de linguagem natural para analisar a comunicação escrita dos funcionários, identificando pontos fortes e áreas de melhoria. Além disso, feedbacks anônimos podem ser coletados por meio de pesquisas online, permitindo que os funcionários expressem suas opiniões sobre o clima de trabalho, liderança e colaboração na empresa." titulo="Ferramentas de análise e feedback:" imagem="/soft-skills/feedback.webp" />
+    <imagem-texto :nivel="3" texto="A tecnologia também pode ajudar a avaliar e fornecer feedback sobre habilidades sociais. Por exemplo, as empresas podem utilizar ferramentas de análise de linguagem natural para analisar a comunicação escrita dos funcionários, identificando pontos fortes e áreas de melhoria. Além disso, feedbacks anônimos podem ser coletados por meio de pesquisas online, permitindo que os funcionários expressem suas opiniões sobre o clima de trabalho, liderança e colaboração na empresa." titulo="Ferramentas de análise e feedback:" imagem="/soft-skills/feedback.webp" />
        
   
     <div class="textos">
       <p>Essas são apenas algumas maneiras pelas quais a tecnologia pode apoiar o desenvolvimento e aprimoramento das soft skills nas empresas. É importante lembrar que, embora a tecnologia seja uma ferramenta valiosa, o desenvolvimento de habilidades sociais ainda requer interação humana, prática e feedback contínuo para alcançar resultados efetivos.</p>
     </div>
   </article>
-  <quiz nome="soft skills" :questoes="[
-    {
-      index: 1, 
-      pergunta: 'qual o significado da palavra soft skills?',
-      resposta: 'b',
-      alternativas: [
-        {
-          indice: 'a',
-          texto: 'habilidade técnica',
-        },
-        {
-          indice: 'b',
-          texto: 'habilidades interpessoais'
-        },
-        {
-          indice: 'c',
-          texto: 'habilidades macias'
-        },
-        {
-          indice: 'd',
-          texto: 'habilidades inúteis'
-        },
-      ]
-    },
-    {
-      index: 2, 
-      pergunta: 'quais as soft skills mais utilizadas e requeridas nas empresas?',
-      resposta: 'a',
-      alternativas: [
-        {
-          indice: 'a',
-          texto: 'Comunicação eficaz, Trabalho em equipe e colaboração, Pensamento crítico e solução de problemas, Inteligência emocional e Liderança',
-        },
-        {
-          indice: 'b',
-          texto: 'lógica de programação, criatividade, pensamento crítico e solução de problemas e pensamento ágil'
-        },
-        {
-          indice: 'c',
-          texto: 'nenhuma, soft skills são inúteis no mercado de trabalho'
-        },
-        {
-          indice: 'd',
-          texto: 'comunicação, proatividade, trabalho em equipe e lidar com pressão'
-        },
-      ]
-    }
+  <quiz 
+    texto-inicio="preparamos um pequeno quiz relacionado a soft skills, ele é totalmente baseado nos tópicos abordados anteriormente. se quiser, releia e se prepare para responder, quando estiver pronto, clique em começar"
+    nome="soft skills" 
+    :questoes="[
+      {
+        index: 1, 
+        pergunta: 'qual o significado da palavra soft skills?',
+        resposta: 'b',
+        alternativas: [
+          {
+            indice: 'a',
+            texto: 'habilidade técnica',
+          },
+          {
+            indice: 'b',
+            texto: 'habilidades interpessoais'
+          },
+          {
+            indice: 'c',
+            texto: 'habilidades macias'
+          },
+          {
+            indice: 'd',
+            texto: 'habilidades inúteis'
+          },
+        ]
+      },
+      {
+        index: 2, 
+        pergunta: 'quais as soft skills mais utilizadas e requeridas nas empresas?',
+        resposta: 'a',
+        alternativas: [
+          {
+            indice: 'a',
+            texto: 'Comunicação eficaz, Trabalho em equipe e colaboração, Pensamento crítico e solução de problemas, Inteligência emocional e Liderança',
+          },
+          {
+            indice: 'b',
+            texto: 'lógica de programação, criatividade, pensamento crítico e solução de problemas e pensamento ágil'
+          },
+          {
+            indice: 'c',
+            texto: 'nenhuma, soft skills são inúteis no mercado de trabalho'
+          },
+          {
+            indice: 'd',
+            texto: 'comunicação, proatividade, trabalho em equipe e lidar com pressão'
+          },
+        ]
+      }
   ]"/>
 </div>
 </template>

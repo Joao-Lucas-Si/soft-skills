@@ -77,7 +77,7 @@ export default {
     color: #fff;
     padding: 1%;
     gap: 15px;
-    font-size: .9rem;
+    font-size: .95rem;
     font-family: 'Chalkduster';
 }
 

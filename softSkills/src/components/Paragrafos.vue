@@ -11,7 +11,7 @@ export default {
     },
     computed: {
         paragrafos() {
-            return this.texto?.split("/n")
+            return this.texto?.split("\n")
         }
     }
 }

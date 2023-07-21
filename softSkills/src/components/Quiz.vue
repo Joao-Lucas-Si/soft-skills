@@ -1,8 +1,10 @@
 <template>
 <div class="quiz">
     <div :class="`etapa ${(etapa == 1)? 'atual': ''}`">
+
         <h3 class="titulo">{{ nome }}</h3>
-        <button @click="passarEtapa()">começar</button>
+        <Paragrafos :texto="textoInicio" />
+        <BotaoSimples @clicado="passarEtapa()" texto="começar" />
     </div>
     <div :class="`etapa ${(etapa == 2)? 'atual': ''}`">
         <div class="questao" v-for="questao in questoes" :key="questao.index" :class="(questao.index == questaoAtual) ? 'atual' : ''">
@@ -16,14 +18,17 @@
                     <span>{{ alternativa.texto }}</span>
                 </li>
             </ol>
-            <button class="responder" @click="verificarResposta()">responder</button>
+            
+            <BotaoSimples :habilitado="alternativaSelecionada !=''" @clicado="verificarResposta()" texto="responder" />
         </div>
     </div>
     <div :class="`etapa ${(etapa == 3)? 'atual': ''}`" >
         <h3 class="titulo">você acertou {{ acertos.length }} de {{ questoes?.length }}</h3>
-
-        <button @click="resetar()">fazer de novo</button>
-        <button @click="passarEtapa()">ver respostas</button>
+        <p>{{ mensagemFinal }}</p>
+        <div class="opcoes-finais">
+            <BotaoSimples @clicado="resetar()" texto="fazer de novo" />
+            <BotaoSimples @clicado="passarEtapa()" texto="ver respostas" />
+        </div>
     </div>
     <div :class="`etapa respostas ${(etapa == 4)? 'atual': ''}`" >
         <h3 class="titulo">respostas</h3>
@@ -49,6 +54,8 @@
 
 <script lang="ts">
 import Resposta from './Resposta.vue'
+import BotaoSimples from './BotaoSimples.vue';
+import Paragrafos from './Paragrafos.vue';
 interface alternativa {
     indice: string, 
     texto: string
@@ -67,6 +74,7 @@ interface data {
     etapa: number,
     questaoAtual: number,
     alternativaSelecionada: string,
+    mensagensFinais: string[]
 }
 
 export default {
@@ -76,14 +84,39 @@ export default {
             respostas: [],
             etapa: 1,
             questaoAtual: 1,
-            alternativaSelecionada: ""
+            alternativaSelecionada: "",
+            mensagensFinais: [
+                "isso não é algo ruim, sempre há outra change",
+                "tudo tem um começo, tente ir melhor na próxima",
+                "quase lá",
+                "você foi excelente"
+            ] 
         };
     },
     props: {
         nome: String,
+        textoInicio: String,
         questoes: {
             type: Object as () => questao[],
             required: true
+        }
+    },
+    computed: {
+        mensagemFinal() {
+            switch(this.acertos.length)  {
+                case 0:
+                    return this.mensagensFinais[0]
+                    break 
+                case this.questoes?.length:
+                    return this.mensagensFinais[3]
+                    break 
+                case this.questoes?.length - 1:
+                    return this.mensagensFinais[2]
+                    break 
+                default:
+                    return this.mensagensFinais[1]
+                    break
+            }
         }
     },
     methods: {
@@ -107,11 +140,16 @@ export default {
             this.respostas = [];
         },
     },
-    components: { Resposta }
+    components: { Resposta, BotaoSimples, Paragrafos }
 }
 </script>
 
 <style lang="scss" scoped>
+
+.opcoes-finais {
+    display: flex;
+    gap: 10px;
+}
 .quiz {
     width: 75%;
     min-height: 50vh;
@@ -134,7 +172,7 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            gap: 10px;
             flex-direction: column;
         }
     }

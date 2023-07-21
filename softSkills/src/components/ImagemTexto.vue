@@ -3,9 +3,7 @@
         <h2 v-if="nivel == 2" class="titulo">{{ titulo }}</h2>
         <h3 v-else-if="nivel == 3" class="titulo">{{ titulo }}</h3>
         <div class="conteudo">
-            <div class="textos">
-                <p v-for="texto in textos">{{ texto }}</p>
-            </div>
+            <Paragrafos  :texto="texto"/>
             <div class="imagem">
                 <span></span>
                 <img :src="imagem" alt="">
@@ -15,25 +13,22 @@
 </article>
 </template>
 <script lang="ts">
+import Paragrafos from './Paragrafos.vue';
 export default {
     props: {
         titulo: String,
-        textoOriginal: String,
+        texto: String,
         imagem: String,
         nivel: {
             type: Number,
             default: 2
         },
-        reverso:  {
+        reverso: {
             type: Boolean,
             default: false
         }
     },
-    computed: {
-        textos() {
-            return this.textoOriginal?.split("/n")
-        }
-    }
+    components: { Paragrafos }
 }
 </script>
 

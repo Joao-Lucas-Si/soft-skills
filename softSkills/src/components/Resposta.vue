@@ -76,11 +76,11 @@ export default {
 <style lang="scss" scoped>
 
 .resposta {
-    --cor: v-bind(corAcerto);
+    --cor-acerto: v-bind(corAcerto);
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 2px var(--cor) solid;
+    border: 2px var(--cor-acerto) solid;
     border-radius: 5px;
     overflow: hidden;
 
@@ -90,7 +90,7 @@ export default {
 
         button {
             padding-block: 10px;
-            background-color: var(--cor);
+            background-color: var(--cor-acerto);
             color: #000;
             border: none;
             padding-inline: 20px;
@@ -118,17 +118,13 @@ export default {
         }
 
         .certa {
-            dt {
+            dt, dd {
                 background-color: var(--cor-destaque);
-            }
-
-            dd {
-                background-color: var(--cor-destaque2);
             }
         }
 
         dt {
-            background-color: var(--cor);
+            background-color: var(--cor-acerto);
             color: #000;
             width: 100%;
             padding-inline: 20px;
@@ -136,7 +132,7 @@ export default {
         }
 
         dd {
-            background-color: var(--cor);
+            background-color: var(--cor-acerto);
             padding-inline: 20px;
             width: 100%;
             color: #fff;

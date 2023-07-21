@@ -1,9 +1,12 @@
 <template>
 <div >
+
+
     <div class="modal">
         <h2 class="titulo">{{ titulo }}</h2>
-        <p>{{ textos }}</p>
-        <botao-icon @clicar="$emit('fecharModal')" icon="/Vuejs.svg" texto="fechar" />
+        <paragrafos :texto="textos" />
+        <botao-simples @clicado="$emit('fecharModal')" texto="fechar" />
+        
     </div>
     <span class="fundo"></span>
 </div>
@@ -11,6 +14,8 @@
 
 <script lang="ts">
 import BotaoIcon from './botaoIcon.vue';
+import Paragrafos from './Paragrafos.vue';
+import BotaoSimples from './BotaoSimples.vue';
 
 export default {
     emits: ["fecharModal"],
@@ -18,7 +23,7 @@ export default {
         titulo: String,
         textos: String,
     },
-    components: { BotaoIcon }
+    components: { BotaoIcon, Paragrafos, BotaoSimples }
 }
 </script>
 

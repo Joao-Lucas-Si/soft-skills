@@ -76,6 +76,7 @@ export default {
 
     > h4 {
         position: absolute;
+        font-size: 1rem;
         top: -7%;
     }
 

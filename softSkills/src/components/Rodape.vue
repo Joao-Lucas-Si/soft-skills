@@ -5,8 +5,10 @@ import IconSass from './icons/IconSass.vue';
 
 import IconVue from './icons/IconVue.vue';
 
+import IconTypeScript from './icons/IconTypeScript.vue';
+
 export default {
-    components: { IconHtml, IconSass, IconVue, Participante }
+    components: { IconHtml, IconSass, IconVue, Participante, IconTypeScript }
 }
 </script>
 
@@ -71,8 +73,12 @@ export default {
         <h3>SASS</h3>
         </div>
         <div class="tecnologia">
-        <IconHtml />
-        <h3>HTML</h3>
+            <IconHtml />
+            <h3>HTML</h3>
+        </div>
+        <div class="tecnologia">
+            <IconTypeScript />
+            <h3>TypeScript</h3>
         </div>
     </div>
 </footer>
@@ -115,10 +121,10 @@ export default {
 footer{
   background-color: $bg-cor2;
   border-top: solid 5px $cor-destaque;
-  padding-block: 5%;
+  padding-block: 3%;
   >img{
-    width: 50%; /* A imagem ocupará toda a largura do banner */
-    height: 350px; /* A imagem ocupará toda a altura do banner */
+    width: 50%;
+    height: 300px;
   }
 }
 

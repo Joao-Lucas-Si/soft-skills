@@ -143,78 +143,79 @@ export default {
 
     
 
-    .player-video {
+.player-video {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+
+    .opcoes {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         width: 100%;
-        position: relative;
-        overflow: hidden;
-        border-radius: 20px;
-
-        .opcoes {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            display :flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 2% 2%;
-
-            > * {
-                display: none;
-            }
-
-            &:hover {
-                background-image: linear-gradient(var(--color-background-soft) , transparent 30%, var(--color-background-soft) );
-                    > * {
-                    display: flex;
-                    flex-direction: column;
-                    width:100%;
-                    gap: 10px;
-                }
-            }
-        }
-
-        h3 {
-            width: 100%;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    button {
-        height: 2rem;
-        background-color: transparent;
-        width: 2rem;
-
-        svg {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    .controles {
-        display: flex;
+        height: 100%;
+        display :flex;
+        flex-direction: column;
         justify-content: space-between;
+        padding: 2% 2%;
 
-        > div {
+        > * {
+            display: none;
+        }
 
-            &:first-of-type {
+        &:hover {
+            background-image: linear-gradient(var(--color-background-soft) , transparent 30%, var(--color-background-soft) );
+                > * {
                 display: flex;
-                
-
-                button {
-                    border-radius: 10px;
-                    background-color: var(--color-background);
-                    color: $cor-destaque;
-                }
+                flex-direction: column;
+                width:100%;
+                gap: 10px;
             }
-            display: flex;
-            align-items: center;
-            gap: 5px;
         }
     }
+
+    h3 {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+button {
+    height: 2rem;
+    background-color: transparent;
+    width: 2rem;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+
+        &:first-of-type {
+            display: flex;
+            
+
+            button {
+                border-radius: 10px;
+                background-color: var(--color-background);
+                color: $cor-destaque;
+                border: solid $cor-destaque 2px;
+            }
+        }
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
 
 
 video {
@@ -230,6 +231,7 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 
     &:hover {
         display: flex;
@@ -237,6 +239,9 @@ video {
 
     .barra {
         width: 100%;
+        background-color: #c0c0c0;
+        border-radius: 20px;
+        overflow: hidden;
     }
 
     .progresso {
