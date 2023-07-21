@@ -5,7 +5,8 @@
         <h3 class="titulo">{{ titulo }}</h3>
     </div>
     <div :class="`summary ${(aberto) ? 'aberto' : ''}`">
-        <paragrafos :texto="texto" />
+        <paragrafos v-if="texto" :texto="texto" />
+        <slot v-else ></slot>
     </div>
 </div>
 </template>
@@ -35,7 +36,7 @@ export default {
         },
         texto: {
             type: String,
-            required: true
+            required: false
         },
         icon: {
             type: String,
@@ -75,6 +76,7 @@ export default {
     max-height: 0px;
     transition: max-height .5s ease-in-out;
     overflow: hidden;
+    padding-left: 2%;
 
     &.aberto {
         max-height: 1000px;

@@ -135,8 +135,8 @@ export default {
     
     img {
         
-  
-        width: 100%;
+        margin: auto;
+        width: 90%;
     }
 }
 
@@ -153,7 +153,7 @@ export default {
 
 .player {
     display: grid;
-    grid-template-columns: 1fr 55% 1fr;
+    grid-template-columns: 1fr 50% 1fr;
     justify-items: center;
     align-content: center;
     height: 4rem;

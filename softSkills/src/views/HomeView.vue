@@ -47,7 +47,7 @@
 
     <div class="integrantes-info">
       <integrante nome="João Lucas Silva Lopes" foto="logo.png" :idade="17" :skills="['criatividade', 'proatividade']"  />
-      <integrante nome="Jhordan Samuel Jesus dos Santos" foto="jhordan.png" :idade="16" :skills="['lidar com pressão']" />
+      <integrante nome="Jhordan Samuel Jesus dos Santos" foto="jhordan.png" :idade="16" :skills="['lidar com pressão', 'trabalho em equipe']" />
       <integrante nome="Danilo Medeiros de Oliveira" foto="danilo.png" :idade="17" :skills="['comunicação', 'trabalho em equipe', 'proatividade']" />
     </div>
   </div>
@@ -118,6 +118,8 @@ header {
 
 .noticias{
   display: flex;
+  border: solid $cor-destaque 5px ;
+  border-bottom: none;
 }
 
 </style>
