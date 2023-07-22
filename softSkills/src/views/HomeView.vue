@@ -68,7 +68,7 @@ export default {
     }
   },
   beforeMount() {
-     document.title = "inteligência emocional"
+     document.title = "home"
   },
   methods: {
     mudarNoticia(direcao:string): void {

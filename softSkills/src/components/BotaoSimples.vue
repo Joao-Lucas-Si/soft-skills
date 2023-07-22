@@ -6,13 +6,31 @@ export default {
         habilitado: {
             type:Boolean,
             default: true,
+        },
+        tipo: {
+            type: String,
+            default: "button",
+            validator(valor: string): boolean {
+                const tipos = [
+                    "button",
+                    "submit",
+                    "reset"
+                ]
+                if (tipos.includes(valor) ) {
+                    return true
+                }
+                
+                return false
+            }
         }
-    }
+    },
+    
+
 }
 </script>
 
 <template>
-<button :class="(!habilitado) ? 'desabilitado': ''" @click="(habilitado) ? $emit('clicado') : ''">{{texto}}</button>
+<button :type="tipo" :class="(!habilitado) ? 'desabilitado': ''" @click="(habilitado) ? $emit('clicado') : ''">{{texto}}</button>
 </template>
 
 
