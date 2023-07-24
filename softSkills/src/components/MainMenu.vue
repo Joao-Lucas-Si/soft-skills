@@ -44,11 +44,14 @@ nav {
     transition: all 0.5s ease-in-out;
     position: sticky;
     top: 0%;
+    
     padding-top: 10px;
     border-right: rgba(0, 189, 126, 1) solid 1px;
   
     &:hover {
       width: 10vw;
+
+      
     }
   
     > svg {
@@ -67,7 +70,7 @@ nav {
       margin-top: 10px;
       border-bottom: 1px solid var(--color-text);
       text-align: center;
-  
+      
       svg {
         fill: var(--color-text);
         width: 3rem;
@@ -75,7 +78,9 @@ nav {
       }
   
       h4 {
+        transition: opacity 0.5s;
         text-transform: capitalize;
+        
       }
   
       &.router-link-exact-active {

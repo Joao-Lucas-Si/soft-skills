@@ -27,11 +27,7 @@
     </article>
      <article>
       <h2 class="titulo">soft skills mais utilizadas e requeridas nas empresas</h2>
-      <div class="textos">
-        <p>
-        As habilidades sociais e emocionais, conhecidas como soft skills, têm se tornado cada vez mais importantes nas empresas, pois complementam as habilidades técnicas dos profissionais. Embora a importância de cada soft skill possa variar de acordo com o setor e o contexto específico, aqui estão cinco soft skills amplamente utilizadas nas empresas:
-
-      </p>
+      <paragrafos texto="As habilidades sociais e emocionais, conhecidas como soft skills, têm se tornado cada vez mais importantes nas empresas, pois complementam as habilidades técnicas dos profissionais. Embora a importância de cada soft skill possa variar de acordo com o setor e o contexto específico, aqui estão cinco soft skills amplamente utilizadas nas empresas:"/>
 
       <ol>
         <li>
@@ -65,10 +61,7 @@
           />
         </li>
       </ol>
-      <p>
-        É importante ressaltar que as soft skills não são apenas características inatas, mas podem ser desenvolvidas e aprimoradas ao longo do tempo. As empresas reconhecem a importância dessas habilidades e muitas vezes procuram por candidatos que possuam uma combinação equilibrada de habilidades técnicas e soft skills para promover um ambiente de trabalho produtivo e colaborativo.
-      </p>
-    </div>
+     <paragrafos texto="É importante ressaltar que as soft skills não são apenas características inatas, mas podem ser desenvolvidas e aprimoradas ao longo do tempo. As empresas reconhecem a importância dessas habilidades e muitas vezes procuram por candidatos que possuam uma combinação equilibrada de habilidades técnicas e soft skills para promover um ambiente de trabalho produtivo e colaborativo."/> 
 
     
     </article>
@@ -98,10 +91,8 @@
 
     <article>
       <h2 class="titulo">Como a tecnologia pode ajudar a demanda de soft skills nas empresas</h2>
-      <div class="textos">
-        <p>A tecnologia desempenha um papel fundamental em ajudar a atender à demanda por soft skills nas empresas. Aqui estão algumas maneiras pelas quais a tecnologia pode ser utilizada nesse contexto:</p>
-      </div>
-
+      <paragrafos texto="A tecnologia desempenha um papel fundamental em ajudar a atender à demanda por soft skills nas empresas. Aqui estão algumas maneiras pelas quais a tecnologia pode ser utilizada nesse contexto:"/>
+      
       <imagem-texto 
         :nivel="3" 
         texto="A tecnologia permite o acesso a uma ampla variedade de recursos de aprendizagem online, como cursos, tutoriais em vídeo e conteúdos interativos. Essas plataformas podem oferecer treinamentos específicos para desenvolver habilidades sociais e emocionais, permitindo que os funcionários aprendam no seu próprio ritmo e de acordo com suas necessidades individuais." 
@@ -116,11 +107,9 @@
       <imagem-texto :nivel="3" :reverso="true" texto="A gamificação envolve a aplicação de elementos de jogos, como pontos, competição e recompensas, em contextos não relacionados a jogos. Essa abordagem pode ser utilizada para incentivar e desenvolver soft skills. Por exemplo, os funcionários podem participar de jogos ou desafios interativos que promovam o trabalho em equipe, a resolução de problemas ou a comunicação eficaz. Essas experiências lúdicas podem ser envolventes e motivadoras, estimulando o desenvolvimento de habilidades sociais." titulo="Gamificação:" imagem="/soft-skills/gamificacao.jpg" />
 
       <imagem-texto :nivel="3" texto="A tecnologia também pode ajudar a avaliar e fornecer feedback sobre habilidades sociais. Por exemplo, as empresas podem utilizar ferramentas de análise de linguagem natural para analisar a comunicação escrita dos funcionários, identificando pontos fortes e áreas de melhoria. Além disso, feedbacks anônimos podem ser coletados por meio de pesquisas online, permitindo que os funcionários expressem suas opiniões sobre o clima de trabalho, liderança e colaboração na empresa." titulo="Ferramentas de análise e feedback:" imagem="/soft-skills/feedback.webp" />
-          
+ 
+      <paragrafos texto="Essas são apenas algumas maneiras pelas quais a tecnologia pode apoiar o desenvolvimento e aprimoramento das soft skills nas empresas. É importante lembrar que, embora a tecnologia seja uma ferramenta valiosa, o desenvolvimento de habilidades sociais ainda requer interação humana, prática e feedback contínuo para alcançar resultados efetivos."/>
 
-      <div class="textos">
-        <p>Essas são apenas algumas maneiras pelas quais a tecnologia pode apoiar o desenvolvimento e aprimoramento das soft skills nas empresas. É importante lembrar que, embora a tecnologia seja uma ferramenta valiosa, o desenvolvimento de habilidades sociais ainda requer interação humana, prática e feedback contínuo para alcançar resultados efetivos.</p>
-      </div>
     </article>
   </main>
   <quiz 
@@ -244,5 +233,16 @@ header {
   background-color: $bg-cor2;
   border-bottom: solid 5px $cor-destaque;
   padding-bottom: 20px;
+}
+ol {
+  padding-inline: 10% 5%;
+
+  li {
+    margin-block: 10px;
+    &::marker {
+      color: $cor-destaque;
+      font-size: 1.5rem;
+    }
+  }
 }
 </style>

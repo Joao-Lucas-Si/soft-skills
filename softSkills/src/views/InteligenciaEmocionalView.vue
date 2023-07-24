@@ -5,8 +5,6 @@
       <h2 class="titulo">pilares</h2>
 
       <div class="pilares">
-
-
         <pilar 
           titulo="autoconsciência" 
 
@@ -47,11 +45,10 @@
         <pilar 
           titulo="Habilidades sociais" 
           imagem="/logo.svg"
-          textos="Para fechar, o último dos pilares da inteligência emocional é tão importante quanto os demais, diz respeito às habilidades sociais, ou seja, a capacidade de construir relações saudáveis e duradouras. Quem tem o dom da sociabilidade fará de tudo para que conviver em paz e harmonia em um ambiente coletivo.
+          textos="o último dos pilares da inteligência emocional diz respeito às habilidades sociais, ou seja, a capacidade de construir relações saudáveis e duradouras. Quem tem o dom da sociabilidade fará de tudo para que conviver em paz e harmonia em um ambiente coletivo.
 
           A pessoa hábil socialmente será pacífica, gentil, positiva e prestativa, mesmo quando se sentir irritada ou frustrada por algum motivo. É como se ela fosse capaz de não se deixar atingir pelas emoções negativas, pensando no bem comum e nas oportunidades de crescimento na vida e na carreira.
-          
-          Cada indivíduo em sua jornada de formação traz consigo diversas emoções e sentimentos mais ou menos desenvolvidos. Ao longo da vida é possível perceber a necessidade de aprimorar os sentidos e dar vazão a princípios que farão a diferença conforme o ambiente."
+          "
         />
       </div>
     </header>
@@ -349,10 +346,7 @@
 
       <article>
         <h2 class="titulo">Principais características de quem tem baixa inteligência emocional</h2>
-        <div class="textos">
-          <p>quem não tem essa inteligência costuma apresentar reações negativas em algumas circunstâncias. Confira, a seguir, algumas atitudes típicas de quem não apresenta essa importante capacidade:</p>
-        </div>
-
+        <Paragrafos texto="quem não tem essa inteligência costuma apresentar reações negativas em algumas circunstâncias. Confira, a seguir, algumas atitudes típicas de quem não apresenta essa importante capacidade:"/>
         <ol>
           <li>
             <details-summary titulo="Não reconhece as próprias fraquezas" texto="
@@ -567,7 +561,7 @@ ol {
   padding-inline: 10% 5%;
 
   li {
-    margin-block: 20px;
+    margin-block: 10px;
     &::marker {
       color: $cor-destaque;
       font-size: 1.5rem;
