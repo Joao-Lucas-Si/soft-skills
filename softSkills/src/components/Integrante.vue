@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+
 export default{
 
     props:{    
@@ -50,7 +50,6 @@ export default{
     li {
       position: relative;
       width: fit-content;
-      cursor: pointer;
       transition: all 0.5s ease-in-out;
 
       &:hover {

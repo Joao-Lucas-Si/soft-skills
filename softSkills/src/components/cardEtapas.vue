@@ -14,7 +14,7 @@ import Paragrafos from './Paragrafos.vue';
 export default {
     data() {
         return {
-            etapaAtual: 0,        };
+            etapaAtual: 1,        };
     },
     props: {
         etapas: {
@@ -36,7 +36,7 @@ export default {
             <Paragrafos :texto="etapas[etapa - 1].texto" />
         </div>
     </div>
-    <InputNumber @mudou="(etapa:number)=> etapaAtual = etapa" :min="0" :max="etapas.length"  titulo="etapa atual" />
+    <InputNumber @mudou="(etapa:number)=> etapaAtual = etapa" :min="1" :max="etapas.length"  titulo="Competência atual" />
 </div>
 </template>
 <style lang="scss">
@@ -63,7 +63,7 @@ export default {
 .input-number {
     position: absolute;
     left: 50%;
-    bottom: -4.2rem;
+    bottom: -5rem;
     transform: translate(-50%)
 }
 </style>

@@ -14,7 +14,7 @@
             url="https://www.atribuna.com.br/variedades/domingo-mais/soft-skills-estudo-mostra-o-porque-essas-atividades-sao-tao-importantes"
             fonteLogo="https://www.atribuna.com.br/assets/img/Home/logoat.svg"
             :noticia-atual="noticiaAtual"
-            fonteUrl="https://valor.globo.com/"
+            fonteUrl="https://www.atribuna.com.br/"
             cor="#282828"
           />
           <noticia
@@ -34,7 +34,7 @@
             url="https://olhardigital.com.br/2023/01/23/colunistas/a-urgencia-das-soft-skills-no-mercado-tecnologico-pos-pandemico/"
             fonteLogo="https://olhardigital.com.br/wp-content/themes/olhardigital/views/default/assets/images/header-logo.webp"
             :noticia-atual="noticiaAtual"
-            fonteUrl=""
+            fonteUrl="https://olhardigital.com.br/"
             cor="#282828"
           />
         </div>
@@ -43,13 +43,15 @@
       </div>
     </header>
 
-    <h2 class="titulo">Integrantes</h2>
+    <main>
+      <h2 class="titulo">Integrantes</h2>
 
-    <div class="integrantes-info">
-      <integrante nome="João Lucas Silva Lopes" foto="logo.png" :idade="17" :skills="['criatividade', 'proatividade']"  />
-      <integrante nome="Jhordan Samuel Jesus dos Santos" foto="jhordan.png" :idade="16" :skills="['lidar com pressão', 'trabalho em equipe']" />
-      <integrante nome="Danilo Medeiros de Oliveira" foto="danilo.png" :idade="17" :skills="['comunicação', 'trabalho em equipe', 'proatividade']" />
-    </div>
+      <div class="integrantes-info">
+        <integrante nome="João Lucas Silva Lopes" foto="joao.png" :idade="17" :skills="['criatividade', 'proatividade']"  />
+        <integrante nome="Jhordan Samuel Jesus dos Santos" foto="jhordan.png" :idade="16" :skills="['lidar com pressão', 'trabalho em equipe']" />
+        <integrante nome="Danilo Medeiros de Oliveira" foto="danilo.png" :idade="17" :skills="['comunicação', 'trabalho em equipe', 'proatividade']" />
+      </div>
+    </main>
   </div>
 </template>
 

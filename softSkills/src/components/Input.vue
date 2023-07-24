@@ -100,7 +100,7 @@ export default {
             }
 
             else {
-                this.mensagemErro = "valido"
+                this.mensagemErro = "válido"
                 this.valido  = true
                 
             }
@@ -127,7 +127,7 @@ export default {
             }
             else {
                 const nomeStore = useNomeStore();
-                this.mensagemErro = "valido";
+                this.mensagemErro = "válido";
                 this.valido = true;
                 nomeStore.nome = this.valor;
             }
@@ -147,7 +147,7 @@ export default {
             if (this.mensagemErro == "") {
                 return undefined;
             }
-            else if (this.mensagemErro == "valido") {
+            else if (this.mensagemErro == "válido") {
                 return true;
             }
             else {
@@ -158,7 +158,7 @@ export default {
             if (this.mensagemErro == "") {
                 return "#c0c0c0";
             }
-            else if (this.mensagemErro == "valido") {
+            else if (this.mensagemErro == "válido") {
                 return "#80FF80";
             }
             else {

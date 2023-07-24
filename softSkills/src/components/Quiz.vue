@@ -38,16 +38,16 @@
             :pergunta="questao.pergunta" 
             :acertos="acertos" 
             :indice="questao.index" 
-            :resposta-certa-texto="questao.alternativas.find(alternativa => {
+            :resposta-certa-texto="String(questao.alternativas.find(alternativa => {
                 if (alternativa.indice == questao.resposta){
                     return alternativa
                 }
-            })?.texto" 
-            :resposta-selecionada-texto="questao.alternativas.find(alternativa => {
+            })?.texto)" 
+            :resposta-selecionada-texto="String(questao.alternativas.find(alternativa => {
                 if (alternativa.indice ==respostas[questao.index - 1]){
                     return alternativa
                 }
-            })?.texto" />
+            })?.texto)" />
     </div>
 </div>
 </template>

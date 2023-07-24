@@ -1,10 +1,10 @@
 <template>
 <div :class="`noticia ${ direcao } ${(posicao == noticiaAtual) ? ' atual': '' }`">
-    <a class="fundo" :href="url">
+    <a target="_blank" class="fundo" :href="url">
         <img :src="img" alt="">
     </a>
     <div class="canto">
-        <a :href="fonteUrl">
+        <a target="_blank" :href="fonteUrl">
             <img :src="fonteLogo" alt="">
         </a>
         <h2>{{ titulo }}</h2>
@@ -13,7 +13,6 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
 export default {
     props: {
         url: String,
@@ -63,10 +62,11 @@ export default {
         bottom: 0%;
         height: 30%;
         width: 70%;
+        gap: 20px;
         border-start-end-radius: 700px;
         align-items: center;
         background-color: v-bind(cor);
-        padding-right: 5%;
+        padding-right: 10%;
 
         a {
             height: 100%;

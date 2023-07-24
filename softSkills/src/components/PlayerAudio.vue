@@ -100,7 +100,7 @@ export default {
         }
     },
     setup() {
-        const player: HTMLAudioElement = ref()  
+        const player: any = ref()  
 
         return {
             player

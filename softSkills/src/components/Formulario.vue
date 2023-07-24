@@ -36,16 +36,14 @@ export default {
             this.validos[indice] = valido
         },
         
-        submit() {
-            return true
-        }
+       
     },
     components: { Input, Radios, TextArea, BotaoSimples }
 }
 </script>
 
 <template>
-<form @submit.prevent="submit()" action="mailto:" method="post" novalidate>
+<form action="mailto:marianne.cichy@docente.fieb.edu.br" method="post" novalidate>
     <h2 class="titulo">entre em contato</h2>
     <div class="barra">
         <div class="progresso" :style="`width: ${progresso};`"></div>
@@ -58,10 +56,13 @@ export default {
             <Input :indice="0" @validado="validar" tipo="text" nome="nome"/>
             <Input :indice="1" @validado="validar" tipo="email" nome="email"/>
             
-            <Radios :indice="2" @validado="validar"  titulo="assunto" nome="assunto" :radios="['bug', 'critica', 'dúvida', 'sugestão']"/>
+            <Radios :indice="2" @validado="validar"  titulo="assunto" nome="assunto" :radios="['bug', 'critica', 'dúvida', 'sugestão', 'elogio']"/>
             <TextArea @validado="validar" :indice="3" />
             <div class="botoes">
-                <BotaoSimples @clicado="submit()" :habilitado="enviar" tipo="submit" texto="enviar" />
+                <BotaoSimples :mensagens="{
+                    valido: 'permitido enviar',
+                    invalido: 'você não pode enviar sua mensagem até que esse formulário esteja válido'
+                }" :habilitado="enviar" tipo="submit" texto="enviar" />
                
             </div>
             

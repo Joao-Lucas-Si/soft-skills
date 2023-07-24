@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   beforeMount() {
      document.title = "página não encontrada"

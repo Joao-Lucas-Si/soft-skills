@@ -18,14 +18,14 @@ export default {
             required: true
         },
         radios: {
-            type: Array<String>,
+            type: Array<string>,
             required: true
         },
         indice: Number,
     },
     methods: {
         id(radio: String): string {
-            return radio.replaceAll(" ", "-");
+            return radio.replace(" ", "-");
         },
         abrirRadios() {
             this.aberto = !this.aberto;
@@ -49,15 +49,26 @@ export default {
 </script>
 
 <template>
-<div class="radios">
-    <h4 @click="abrirRadios()">{{ titulo }} <IconValido style="height: 100%; width: 3ch;" :estado="iconEstado"/> </h4>
-    <div :class="`lista-radios ${aberto ?  'aberto': '' }`">
-        <label class="in" :for="id(radio)" v-for="radio in radios"><input :value="radio" v-model="valor" type="radio" :name="nome" :id="id(radio)"> {{ radio }}</label>
+<div>
+    <div class="radios">
+        <h4 @click="abrirRadios()">{{ titulo }} <IconValido style="height: 100%; width: 3ch;" :estado="iconEstado"/> </h4>
+        <div :class="`lista-radios ${aberto ?  'aberto': '' }`">
+            <label class="in" :for="radio" v-for="radio in radios"><input :value="radio" v-model="valor" type="radio" :name="nome" :id="radio"> {{ radio }}</label>
+        </div>
+        
     </div>
+    <p>{{(valor != "")? 'válido': ''}}</p>
 </div>
 </template>
 
 <style lang="scss" scoped>
+div:first-child {
+    margin: auto;
+}
+p {
+    color: v-bind(corValido);
+    text-align: center
+}
 .radios {
     display: flex;
     flex-direction: column;

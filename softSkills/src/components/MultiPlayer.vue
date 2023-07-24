@@ -41,11 +41,12 @@ export default {
 
 <style lang="scss" scoped>
 .video {
-    padding-inline: 5%;
+    padding-right: 5%;
 }
 .player {
     display: grid;
     grid-template-columns: 80% 20%;
+    padding: 2% 5%;
 }
 
 .videos {
@@ -53,8 +54,8 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding-inline: 5%;
+    gap: 10px;
+    
 
     img {
         width: 100%;

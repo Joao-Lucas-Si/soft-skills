@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            valor: 0,
+            valor: this.min,
             
         }
     },
@@ -13,16 +13,21 @@ export default {
     },
     methods: {
         inclementar() {
-            this.valor +=  (this.valor != this.max) ? 1: 0 
+            if (this.valor != undefined) {
+                this.valor +=  (this.valor != this.max) ? 1: 0 
+            }
         },
         declementar() {
-            this.valor -= (this.valor != this.min) ? 1: 0 
+            if (this.valor != undefined) {
+                this.valor -=  (this.valor != this.max) ? 1: 0 
+            }
+            
         }, 
         validar() {
-            if (this.max != undefined && this.valor > this.max) {
+            if (this.max != undefined && this.valor !=undefined && this.valor > this.max) {
                 this.valor = this.max
             }
-            else if (this.min != undefined && this.valor < this.min) {
+            else if (this.min != undefined && this.valor !=undefined && this.valor < this.min) {
                 this.valor = this.min
             }
         }

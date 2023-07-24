@@ -55,6 +55,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
 }
 
 .card-info {
@@ -63,18 +65,19 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--color-background-mute);
-    padding: 4%;
+    padding-inline: 3%;
+    padding-top: 0;
     border: $cor-destaque 10px outset;
     border-radius: 20px;
     padding-bottom: 0%;
-    max-height: 100vh;
+    
 
 }
 
 .botao-etapa {
     background-color: var(--color-text);
     color: #000;
-    padding: 20px 5px;
+    padding: 20px 10px;
     outline: none;
     cursor: pointer;
     border-top-left-radius: 20px;
@@ -82,6 +85,10 @@ export default {
     &.atual {
         background-color: $cor-destaque;
     }
+}
+
+.etapas {
+    padding-block: 10px;
 }
 
 .etapa {

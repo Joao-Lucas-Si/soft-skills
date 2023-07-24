@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SoftSkillsView from '@/views/SoftSkillsView.vue'
-import Pagina404View from '@/views/Pagina404View.vue'
+import Pagina404View from '@/views/Pagina404.vue'
 import InteligenciaEmocionalView from '@/views/InteligenciaEmocionalView.vue'
 
 const router = createRouter({

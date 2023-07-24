@@ -100,7 +100,7 @@ export default {
         }
     },
     setup() {
-        const player: HTMLVideoElement = ref("")
+        const player: any = ref<HTMLVideoElement>()
 
         return {
             player
