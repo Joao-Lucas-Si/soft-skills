@@ -333,15 +333,35 @@
 
       <article>
         <h2 class="titulo">benefícios da inteligência emocional no mercado de trabalho</h2>
-        <Paragrafos texto="No trabalho, a inteligência emocional é de extrema relevância justamente pelo fato de trabalharmos com pessoas e enfrentarmos, com frequência, momentos de tensão. Afinal, é preciso fazer um trabalho de qualidade, não errar, cumprir prazos e receber feedbacks.
-        
-          Assim, tanto o relacionamento pessoal como os momentos de estresse precisam ser manejados da melhor forma para que você possa trabalhar em um ambiente saudável. E é aí que entra a inteligência emocional.
-        
-          Com essa habilidade, você consegue ter um controle sobre suas emoções, evitando, por exemplo, falar o que não deve quando provocado por um colega. Imagine dar uma resposta grosseira no calor da situação e depois ter que enfrentar um clima ruim com essa pessoa que você encontra diariamente no escritório? Ou pior: imagine perder o emprego devido a esse comportamento.
+        <Paragrafos texto="Aplicar a inteligência emocional no trabalho traz inúmeros benefícios para equipes e líderes dentro das empresas. Confira algumas vantagens."/>
+        <ImagemTexto :reverso="true" titulo="Comunicação mais efetiva" texto="A inteligência emocional é a base para uma comunicação clara e efetiva no ambiente de trabalho.
 
-          Então, nesse exemplo, dá para perceber que, se o profissional agisse com inteligência emocional, saberia que aquele tipo de situação o deixaria desconfortável, conseguindo se preparar melhor na ocasião. Poderia dar uma resposta com calma e sem perder o respeito pelo colega.
+        Afinal, os colaboradores precisam ter plena consciência de suas emoções e saber lidar com os sentimentos dos outros para transmitir mensagens corretamente e evitar ruídos em suas conversas diárias.
         
-          Nesse sentido, para ter essa soft skill, é importante se autoconhecer, analisando sua postura em diferentes cenários. Desse modo, você sabe quais são suas reações em diferentes contextos, podendo controlar esses impulsos, a fim de não prejudicar sua imagem profissional."/>
+        Além disso, essa competência ajuda a desenvolver a empatia no trabalho, que por sua vez leva à prática da comunicação não violenta." imagem="/inteligencia-emocional/comunicacao.png"/>
+        <ImagemTexto titulo="Facilidade de trabalhar em equipe" texto="O trabalho em equipe é fundamental para o sucesso de qualquer negócio, e a inteligência emocional tem um papel importante nessa dinâmica.
+
+        Quando os colaboradores se comunicam claramente e respeitam os sentimentos uns dos outros, fica muito mais fácil implementar a colaboração nas empresas e construir times mais engajados." imagem="/inteligencia-emocional/trabalho_equipe.jpg"/>
+
+        <ImagemTexto :reverso="true" titulo="Avanço na resolução de conflitos" texto="Conflitos e divergências são inevitáveis no ambiente de trabalho, mas o domínio adequado das emoções faz toda a diferença nessas horas.
+
+        Colaboradores e líderes com inteligência emocional desenvolvida conseguem mediar conflitos facilmente e administrar os ânimos durante conversas difíceis, de modo que as pessoas cheguem a um acordo o mais rápido possível." imagem="/inteligencia-emocional/conflito.png"/>
+
+        <ImagemTexto titulo="Melhora no engajamento" texto="Se engajar sua equipe é o seu grande desafio, a inteligência emocional pode ajudar.
+
+        Se você compreender as emoções dos colaboradores, saberá em quais pontos focar para gerar engajamento em cada perfil.
+        
+        Por exemplo, existem pessoas que ficam motivadas com tarefas desafiadoras, enquanto outras precisam de um elogio para seguir em frente e manter sua autoconfiança.
+        
+        É parte da inteligência emocional compreender essas necessidades e despertar a motivação na sua equipe a partir delas" imagem="/inteligencia-emocional/engajamento.png"/>
+
+        <ImagemTexto :reverso="true" titulo="Controle do estresse e da ansiedade" texto="Outro ponto essencial da inteligência emocional é a capacidade de reconhecer seus próprios sentimentos e controlar o estresse e a ansiedade na rotina de trabalho.
+
+        Quando o profissional não compreende seus limites e não faz nada a respeito de uma possível sobrecarga, ele pode acabar acometido pela síndrome de burnout.
+        
+        Esse esgotamento físico e mental atrapalha a produtividade, compromete os resultados da equipe e gera um problema sério de turnover (rotatividade) nas empresas. 
+        
+        Por isso, é importante desenvolver a consciência das próprias emoções para estabelecer limites e manter a saúde mental no trabalho." imagem="/inteligencia-emocional/ansiedade.jpg"/>
       </article>
 
       <article>
