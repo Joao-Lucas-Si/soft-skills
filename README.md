@@ -25,6 +25,6 @@ yarn dev
     </details>
     <details>
         <summary>pelo site da web</summary>
-        apenas basta acessar esse<a href="https://jolly-praline-d382b6.netlify.app/">link</a>
+        apenas basta acessar esse <a target="_blank" href="https://jolly-praline-d382b6.netlify.app/">link</a>
     </details>
 </div>
